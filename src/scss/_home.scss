@@ -57,3 +57,20 @@
     }
   }
 }
+
+.home-image {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  min-height: 80vh;
+  .image {
+    border-radius: 50%;
+    width: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+    img {
+      width: 380px;
+    }
+  }
+}
