@@ -12,9 +12,15 @@ nav {
     font-weight: 600;
     color: var(--logo-color);
   }
+
+  .nav-menu-btn {
+    display: none;
+  }
+
   ul {
     display: flex;
     list-style: none;
+
     .nav-link {
       text-decoration: none;
       color: var(--text-color);

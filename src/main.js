@@ -4,6 +4,7 @@ window.onscroll = function () {
 
 function openMenu() {
   var menuBtn = document.getElementById("menu");
+
   if (menuBtn.className === "nav-menu") {
     menuBtn.className += " responsive";
   } else {
@@ -36,9 +37,13 @@ function scrollActive() {
       sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector(".nav-menu a[href*=" + sectionId + "]").classList.add("active-link");
+      document
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
     } else {
-      document.querySelector(".nav-menu a[href*=" + sectionId + "]").classList.remove("active-link");
+      document
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
   });
 }
